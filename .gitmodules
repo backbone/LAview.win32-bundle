@@ -1,0 +1,15 @@
+[submodule "latex-struct"]
+	path = latex-struct
+	url = git@git.backbone.ws:laview/latex-struct.git
+[submodule "core"]
+	path = core
+	url = git@git.backbone.ws:laview/core.git
+[submodule "data-example"]
+	path = data-example
+	url = git@git.backbone.ws:laview/data-example.git
+[submodule "desktop"]
+	path = desktop
+	url = git@git.backbone.ws:laview/desktop.git
+[submodule "object-example"]
+	path = object-example
+	url = git@git.backbone.ws:laview/object-example.git
