@@ -6,6 +6,7 @@ LIST (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/backbone)
 
 ExternalProject_Add (core
                      SOURCE_DIR  ${CMAKE_SOURCE_DIR}/core
+                     DEPENDS core
 )
 
 INCLUDE (CPackCommonRules)
