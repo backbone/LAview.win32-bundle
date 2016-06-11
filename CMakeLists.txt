@@ -19,7 +19,7 @@ ExternalProject_Add (core
                      INSTALL_DIR bundle
 )
 
-#INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/bundle DESTINATION "win32")
+INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/bundle DESTINATION "win32")
 
 
 
