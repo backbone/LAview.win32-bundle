@@ -13,7 +13,6 @@ SET (MAJOR 0)
 SET (MINOR 0)
 SET (PATCH 0)
 
-SET (WIN32_UNINSTALL_NAME "LAvBundl") # <= 8 symbols for the name
 
 ExternalProject_Add (core
                      SOURCE_DIR ${CMAKE_SOURCE_DIR}/core
@@ -36,4 +35,4 @@ INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/bundle DESTINATION "win32")
 #INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 #INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/share)
 
-INCLUDE (CPackCommonRules)
+ADD_SUBDIRECTORY (cpack)
