@@ -4,9 +4,32 @@ INCLUDE (ExternalProject)
 
 LIST (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/backbone)
 
+SET (PROJECT_LOWERCASE_NAME "laview-win32-bundle")
+SET (PROJECT_DESCRIPTION "LAview Win32 Bundle.")
+
+SET (MAJOR 0)
+SET (MINOR 0)
+SET (PATCH 0)
+
 ExternalProject_Add (core
                      SOURCE_DIR ${CMAKE_SOURCE_DIR}/core
-                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/image
+                     #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
+                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
+#                     PREFIX core
+                     INSTALL_DIR bundle
 )
+
+#INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/bundle DESTINATION "win32")
+
+
+
+
+
+#DEPENDS latex-struct
+
+#INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/bin DESTINATION "win32")
+#INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/include)
+#INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+#INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/share)
 
 INCLUDE (CPackCommonRules)
