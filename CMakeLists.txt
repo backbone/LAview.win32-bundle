@@ -13,6 +13,8 @@ SET (MAJOR 0)
 SET (MINOR 0)
 SET (PATCH 0)
 
+SET (WIN32_UNINSTALL_NAME "LAvBundl") # <= 8 symbols for the name
+
 ExternalProject_Add (core
                      SOURCE_DIR ${CMAKE_SOURCE_DIR}/core
                      #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
