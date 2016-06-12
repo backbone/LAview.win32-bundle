@@ -37,19 +37,19 @@ ExternalProject_Add (latex-struct
                      INSTALL_DIR bundle
 )
 
-ExternalProject_Add (object-example
-                     SOURCE_DIR ${CMAKE_SOURCE_DIR}/object-example
-                     #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
-                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
-#                     PREFIX object-example
-                     INSTALL_DIR bundle
-)
-
 ExternalProject_Add (data-example
                      SOURCE_DIR ${CMAKE_SOURCE_DIR}/data-example
                      #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
                      CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
 #                     PREFIX data-example
+                     INSTALL_DIR bundle
+)
+
+ExternalProject_Add (object-example
+                     SOURCE_DIR ${CMAKE_SOURCE_DIR}/object-example
+                     #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
+                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
+#                     PREFIX object-example
                      INSTALL_DIR bundle
 )
 
