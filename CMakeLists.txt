@@ -29,6 +29,14 @@ ExternalProject_Add (core
                      INSTALL_DIR bundle
 )
 
+ExternalProject_Add (gobject-plugin
+                     SOURCE_DIR ${CMAKE_SOURCE_DIR}/gobject-plugin
+                     #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
+                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
+#                     PREFIX gobject-plugin
+                     INSTALL_DIR bundle
+)
+
 ExternalProject_Add (latex-struct
                      SOURCE_DIR ${CMAKE_SOURCE_DIR}/latex-struct
                      #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
