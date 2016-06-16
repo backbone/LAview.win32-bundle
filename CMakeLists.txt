@@ -53,7 +53,6 @@ ExternalProject_Add (object-example
                      INSTALL_DIR bundle
 )
 
-INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/bundle DESTINATION "win32")
 
 
 
