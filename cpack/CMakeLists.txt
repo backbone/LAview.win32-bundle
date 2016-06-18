@@ -33,6 +33,11 @@ FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/share/icons/Adwaita)
 FOREACH (dirname 16x16 24x24)
   EXECUTE_PROCESS (COMMAND cp -r /mingw${ARCH}/share/icons/Adwaita/${dirname} ${CMAKE_BINARY_DIR}/bundle/share/icons/Adwaita)
 ENDFOREACH (dirname)
+FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/share/icons/hicolor)
+EXECUTE_PROCESS (COMMAND cp /mingw${ARCH}/share/icons/hicolor/index.theme ${CMAKE_BINARY_DIR}/bundle/share/icons/hicolor)
+FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/share/glib-2.0/schemas)
+EXECUTE_PROCESS (COMMAND cp /mingw${ARCH}/share/glib-2.0/schemas/gschemas.compiled
+                            ${CMAKE_BINARY_DIR}/bundle/share/glib-2.0/schemas)
 
 INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/bundle DESTINATION "win${ARCH}")
 
