@@ -29,15 +29,27 @@ FOREACH (libname gspawn-win${ARCH}-helper.exe
 ENDFOREACH (libname)
 
 # required resources
-FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/share/icons/Adwaita)
+SET (adwaita_path share/icons/Adwaita)
+FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/${adwaita_path})
 FOREACH (dirname 16x16 24x24)
-  EXECUTE_PROCESS (COMMAND cp -r /mingw${ARCH}/share/icons/Adwaita/${dirname} ${CMAKE_BINARY_DIR}/bundle/share/icons/Adwaita)
+  EXECUTE_PROCESS (COMMAND cp -r /mingw${ARCH}/${adwaita_path}/${dirname} ${CMAKE_BINARY_DIR}/bundle/${adwaita_path})
 ENDFOREACH (dirname)
-FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/share/icons/hicolor)
-EXECUTE_PROCESS (COMMAND cp /mingw${ARCH}/share/icons/hicolor/index.theme ${CMAKE_BINARY_DIR}/bundle/share/icons/hicolor)
+SET (hicolor_path share/icons/hicolor)
+FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/${hicolor_path})
+EXECUTE_PROCESS (COMMAND cp /mingw${ARCH}/${hicolor_path}/index.theme ${CMAKE_BINARY_DIR}/bundle/${hicolor_path})
 FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/share/glib-2.0/schemas)
 EXECUTE_PROCESS (COMMAND cp /mingw${ARCH}/share/glib-2.0/schemas/gschemas.compiled
                             ${CMAKE_BINARY_DIR}/bundle/share/glib-2.0/schemas)
+
+# locales
+FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/share/locale)
+FOREACH (lang de ru)
+  SET (localedir share/locale/${lang}/LC_MESSAGES)
+  FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/${localedir})
+  FOREACH (libname gtk30)
+    EXECUTE_PROCESS (COMMAND cp /mingw${ARCH}/${localedir}/${libname}.mo ${CMAKE_BINARY_DIR}/bundle/${localedir})
+  ENDFOREACH (libname)
+ENDFOREACH (lang)
 
 INSTALL (DIRECTORY ${CMAKE_BINARY_DIR}/bundle DESTINATION "win${ARCH}")
 
