@@ -5,6 +5,7 @@ CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
 INCLUDE (ExternalProject)
 
 LIST (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/backbone)
+LIST (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/backbone/override/nsis.installoptions)
 
 SET (PROJECT_LOWERCASE_NAME "laview-win32-bundle")
 SET (PROJECT_DESCRIPTION "LAview Win32 Bundle.")
