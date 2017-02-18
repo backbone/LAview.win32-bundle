@@ -10,12 +10,12 @@
 [submodule "desktop"]
 	path = desktop
 	url = git@git.backbone.ws:laview/desktop.git
+[submodule "cmake/backbone"]
+	path = cmake/backbone
+	url = git@git.backbone.ws:make/cmake-backbone-modules.git
+[submodule "gobject-plugin"]
+	path = gobject-plugin
+	url = git@git.backbone.ws:gtk/gobject-plugin.git
 [submodule "object-example"]
 	path = object-example
 	url = git@git.backbone.ws:laview/object-example.git
-[submodule "cmake/backbone"]
-	path = cmake/backbone
-	url = git@git.backbone.ws:cmake/backbone.git
-[submodule "gobject-plugin"]
-	path = gobject-plugin
-	url = git@git.backbone.ws:gobject/plugin.git
