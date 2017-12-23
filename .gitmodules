@@ -19,3 +19,6 @@
 [submodule "object-example"]
 	path = object-example
 	url = git@git.backbone.ws:laview/object-example.git
+[submodule "cairo-chart"]
+	path = cairo-chart
+	url = git@git.backbone.ws:gtk/cairo-chart.git

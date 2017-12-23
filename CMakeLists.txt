@@ -62,6 +62,14 @@ ExternalProject_Add (desktop
                      INSTALL_DIR bundle
 )
 
+ExternalProject_Add (cairo-chart
+                     SOURCE_DIR ${CMAKE_SOURCE_DIR}/cairo-chart
+                     #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
+                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
+#                     PREFIX cairo-chart
+                     INSTALL_DIR bundle
+)
+
 
 
 
