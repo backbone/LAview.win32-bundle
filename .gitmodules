@@ -1,24 +1,24 @@
 [submodule "latex-struct"]
 	path = latex-struct
-	url = git@git.backbone.ws:laview/latex-struct.git
+	url = git@git.backbone.ws:kolan/LAview.LaTeX-Struct.git
 [submodule "core"]
 	path = core
-	url = git@git.backbone.ws:laview/core.git
+	url = git@git.backbone.ws:kolan/LAview.Core.git
 [submodule "data-example"]
 	path = data-example
-	url = git@git.backbone.ws:laview/data-example.git
+	url = git@git.backbone.ws:kolan/LAview.Plugin.Data-Example.git
 [submodule "desktop"]
 	path = desktop
-	url = git@git.backbone.ws:laview/desktop.git
+	url = git@git.backbone.ws:kolan/LAview.Desktop.git
 [submodule "cmake/backbone"]
 	path = cmake/backbone
-	url = git@git.backbone.ws:make/cmake-backbone-modules.git
+	url = git@git.backbone.ws:kolan/CMake.backbone.git
 [submodule "gobject-plugin"]
 	path = gobject-plugin
-	url = git@git.backbone.ws:gtk/gobject-plugin.git
+	url = git@git.backbone.ws:kolan/GObject-Plugin.git
 [submodule "object-example"]
 	path = object-example
-	url = git@git.backbone.ws:laview/object-example.git
+	url = git@git.backbone.ws:kolan/LAview.Plugin.Object-Example.git
 [submodule "cairo-chart"]
 	path = cairo-chart
-	url = git@git.backbone.ws:gtk/cairo-chart.git
+	url = git@git.backbone.ws:kolan/Cairo-Chart.git
