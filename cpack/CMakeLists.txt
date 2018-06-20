@@ -23,7 +23,7 @@ FOREACH (binname gspawn-win${ARCH}-helper.exe perl.exe perl522.dll
          libexpat-1.dll libffi-6.dll libfontconfig-1.dll libfreetype-6.dll libfribidi-0.dll
          libgcc_s_seh-1.dll libgcc_s_dw2-1.dll
          libgdk_pixbuf-2.0-0.dll libgdk-3-0.dll libgee-0.8-2.dll libgio-2.0-0.dll libglib-2.0-0.dll
-         libgmodule-2.0-0.dll libgobject-2.0-0.dll libgraphite2.dll libgtk-3-0.dll libharfbuzz-0.dll
+         libgmodule-2.0-0.dll libgobject-2.0-0.dll libgraphite2.dll libgtk-3-0.dll libgxml-0.16-1.0.0.dll libharfbuzz-0.dll
          libiconv-2.dll libintl-8.dll liblzma-5.dll libpango-1.0-0.dll libpangocairo-1.0-0.dll libpangoft2-1.0-0.dll
          libpangowin32-1.0-0.dll libpcre-1.dll libpixman-1-0.dll
          libpng16-16.dll librsvg-2-2.dll libstdc++-6.dll
