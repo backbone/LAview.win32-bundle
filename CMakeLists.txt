@@ -70,8 +70,29 @@ ExternalProject_Add (cairo-chart
                      INSTALL_DIR bundle
 )
 
+ExternalProject_Add (table_meas
+                     SOURCE_DIR ${CMAKE_SOURCE_DIR}/table_meas
+                     #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
+                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
+#                     PREFIX table_meas
+                     INSTALL_DIR bundle
+)
 
+ExternalProject_Add (control_point
+                     SOURCE_DIR ${CMAKE_SOURCE_DIR}/control_point
+                     #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
+                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
+#                     PREFIX control_point
+                     INSTALL_DIR bundle
+)
 
+ExternalProject_Add (stand_config
+                     SOURCE_DIR ${CMAKE_SOURCE_DIR}/stand_config
+                     #CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=bundle
+                     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}/bundle
+#                     PREFIX stand_config
+                     INSTALL_DIR bundle
+)
 
 
 

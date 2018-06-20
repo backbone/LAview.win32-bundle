@@ -22,3 +22,15 @@
 [submodule "cairo-chart"]
 	path = cairo-chart
 	url = git@git.backbone.ws:kolan/Cairo-Chart.git
+[submodule "table_meas"]
+	path = table_meas
+	url = git@git.insysltd.org:kolan/LAview.Object.TableMeas.git
+[submodule "control_point"]
+	path = control_point
+	url = git@git.insysltd.org:kolan/LAview.Data.ControlPoint.git
+[submodule "stand_config"]
+	path = stand_config
+	url = git@git.insysltd.org:kolan/LAview.Data.StandConfig.git
+[submodule "laview-templates"]
+	path = laview-templates
+	url = git@git.insysltd.org:kolan/LAview.Templates.git
