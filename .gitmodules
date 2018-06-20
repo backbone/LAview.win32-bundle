@@ -6,7 +6,7 @@
 	url = git@git.backbone.ws:kolan/LAview.Core.git
 [submodule "data-example"]
 	path = data-example
-	url = git@git.backbone.ws:kolan/LAview.Plugin.Data-Example.git
+	url = git@git.backbone.ws:kolan/LAview.Data-Example.git
 [submodule "desktop"]
 	path = desktop
 	url = git@git.backbone.ws:kolan/LAview.Desktop.git
@@ -18,7 +18,7 @@
 	url = git@git.backbone.ws:kolan/GObject-Plugin.git
 [submodule "object-example"]
 	path = object-example
-	url = git@git.backbone.ws:kolan/LAview.Plugin.Object-Example.git
+	url = git@git.backbone.ws:kolan/LAview.Object-Example.git
 [submodule "cairo-chart"]
 	path = cairo-chart
 	url = git@git.backbone.ws:kolan/Cairo-Chart.git
