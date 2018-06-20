@@ -20,7 +20,7 @@ FILE (MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/bundle/bin)
 FOREACH (binname gspawn-win${ARCH}-helper.exe perl.exe perl522.dll
          libatk-1.0-0.dll libbz2-1.dll libcairo-2.dll libcairo-gobject-2.dll
          libcroco-0.6-3.dll libepoxy-0.dll
-         libexpat-1.dll libffi-6.dll libfontconfig-1.dll libfreetype-6.dll
+         libexpat-1.dll libffi-6.dll libfontconfig-1.dll libfreetype-6.dll libfribidi-0.dll
          libgcc_s_seh-1.dll libgcc_s_dw2-1.dll
          libgdk_pixbuf-2.0-0.dll libgdk-3-0.dll libgee-0.8-2.dll libgio-2.0-0.dll libglib-2.0-0.dll
          libgmodule-2.0-0.dll libgobject-2.0-0.dll libgraphite2.dll libgtk-3-0.dll libharfbuzz-0.dll
