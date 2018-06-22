@@ -34,3 +34,6 @@
 [submodule "laview-templates"]
 	path = laview-templates
 	url = git@git.insysltd.org:kolan/LAview.Templates.git
+[submodule "config-xml"]
+	path = config-xml
+	url = git@git.insysltd.org:InSysLtd/config-xml.git
