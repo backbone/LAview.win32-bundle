@@ -37,3 +37,9 @@
 [submodule "config-xml"]
 	path = config-xml
 	url = git@git.insysltd.org:InSysLtd/config-xml.git
+[submodule "history-data"]
+	path = history-data
+	url = git@git.insysltd.org:kolan/LAview.Data.History.git
+[submodule "history-object"]
+	path = history-object
+	url = git@git.insysltd.org:kolan/LAview.Object.History.git
